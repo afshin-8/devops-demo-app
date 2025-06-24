@@ -7,7 +7,9 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/')
 def home():
-    return "CI/CD with self-hosted runner is working correct full!!"
+    return "Fully automated deployment powered by GitHub Actions and Docker with a self-hosted runner.
+
+"
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload():
